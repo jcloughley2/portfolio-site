@@ -1,0 +1,11 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+@import "variables";
+@import "normalize";
+@import "html"; 
+@import "content"; 
+@import "pages/home"; 
+@import "pages/resume";
+@import "utility/slick";  

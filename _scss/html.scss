@@ -1,0 +1,85 @@
+// SCSS HTML 
+
+body {
+  background: $s1;   
+  font-family: 'Open Sans', sans-serif;   
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;   
+  color: $d1; 
+  overflow-x: hidden;  
+  font-size: 16px;  
+} 
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  text-transform: uppercase;  
+  font-family: 'Roboto Slab', serif;
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 36px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+h3 {
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  color: $m1;
+  line-height: 32px;
+  font-size: 22px;
+}
+
+h4 {
+  font-family: $sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  margin-bottom: 10px;  
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  color: $m2;
+}
+
+h5 {
+  font-family: $sans-serif;
+  text-transform: uppercase;
+  color: $d1-light;
+  letter-spacing: .25px;
+  margin-bottom: 5px;  
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 22px;
+}
+
+p {
+  margin-bottom: $paragraph-margin-bottom;  
+  margin-top: 0;
+  line-height: 32px;  
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+a {
+  text-decoration: none;  
+  font-weight: 600;
+  color: $m1;  
+  transition: .3s all;
+
+  &:hover {
+    opacity: .8;
+  } 
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+hr {
+  margin-bottom: 40px;
+}

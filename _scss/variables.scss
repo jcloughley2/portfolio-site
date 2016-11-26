@@ -1,0 +1,23 @@
+// SCSS Variables
+
+$color-white: #FFF;
+$color-black: #000;
+
+$d1: #222222;
+$m1: #102542; //#102542;
+$m2: #F87060; //#F87060;
+$m3: #7D98A1;
+$s1: #f3f3f3;
+
+$d1-light: lighten($d1, 20%);
+$s1-light: lighten($s1, 15%);
+$s1-dark: darken($s1, 10%);
+
+$bp-portrait: 600px;
+$bp-landscape: 768px;
+$bp-desktop: 1024px;
+
+$serif: 'Roboto Slab', serif;
+$sans-serif: 'Open Sans', sans-serif;   
+
+$paragraph-margin-bottom: 30px;
