@@ -135,9 +135,30 @@ body.home {
       .tagline-intro {  
         display: inline-block;
         width: 100%;
-        text-align: center;
+        text-align: left;
         color: $color-white;
-        margin-bottom: 5px;
+        margin-bottom: 15px;
+        padding: 0 0 0 80px;
+
+        @media (min-width: 700px) {
+          padding: 0 0 0 90px;
+        }
+
+        @media (min-width: 800px) {
+          padding: 0 0 0 110px;
+        }
+
+        @media (min-width: 900px) {
+          padding: 0 0 0 130px;
+        }
+
+        @media (min-width: $bp-desktop) {
+          padding: 0 0 0 160px;
+        }
+
+        @media (min-width: 1440px) {
+          padding: 0 160px;
+        }
       }
 
       .tagline-wheel {
@@ -302,7 +323,16 @@ body.home {
       &:hover {
 
         .project-thumbnail {
-          opacity: .8;
+
+          &:after {
+            opacity: .3;
+          }
+        }
+
+        .cropped-image {
+          filter: none !important; /* works for firefox */
+          -webkit-filter: none !important; /*for chrome/ safari */
+          -webkit-transition: none !important;
         }
       }
 
@@ -320,6 +350,11 @@ body.home {
         position: relative;
         overflow: hidden;
         vertical-align: top;
+        border-bottom: 5px solid $m2;
+
+        &:hover {
+          opacity: 1;
+        }
 
         .cropped-image {
           background: white;
@@ -334,6 +369,7 @@ body.home {
           filter: saturate(0);
           padding-top: 2 / 3 * 100%;
           vertical-align: top;
+          transition: .3s all;
         }
 
         &:after {
@@ -349,7 +385,7 @@ body.home {
           transition: background .3s;
           opacity: .5;
           background: transparent;
-          filter: none !important;
+          transition: .3s all;
         }
       }
 
@@ -360,23 +396,7 @@ body.home {
       .project-tags {
 
         span {
-          font-size: 18px;
-          line-height: 14px;  
-          padding: 8px 10px;
-          border-radius: 3px;
           background: $s1;
-          display: inline-block;
-          width: auto;
-          text-align: center;
-          color: rgba($d1,.6);
-          transition: .3s all;
-          font-size: 12px;
-          text-transform: uppercase;
-          margin: 0 15px 15px 0;
-
-          @media (min-width: $bp-portrait) {
-            font-size: 14px;
-          }
         }
       }
 

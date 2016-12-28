@@ -1,51 +1,195 @@
 // Content
 
-.width-container {
+.project-tags {
+  display: inline-block;
+  width: auto;
+
+  span {
+    font-size: 18px;
+    line-height: 14px;  
+    padding: 8px 10px;
+    border-radius: 3px;
+    background: $color-white;
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    color: rgba($d1,.6);
+    transition: .3s all;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0 15px 25px 0;
+
+    @media (min-width: $bp-portrait) {
+      font-size: 14px;
+    }
+  }
+}
+
+.layout-treatment {
   display: inline-block;
   width: 100%;
   overflow: auto;
+  box-sizing: border-box;
 
   @media (min-width: $bp-landscape) {
     margin: 0 -20px; 
-  }
-}
-
-.half-width {
-  display: inline-block;
-  width: 100%;
-  box-sizing: border-box;
-  float: left;
-
-  @media (min-width: $bp-landscape) {
-    width: 50%;  
-    padding: 0 20px;
+    width: calc(100% + 40px);
   }
 
-  p:last-child {
-    margin-bottom: $paragraph-margin-bottom;
-  }
-}
-
-.extended-full-width {
-  width: calc(100% + 40px);
-  margin: 30px -20px 50px;
-  background-color: $color-white;
-
-  @media (min-width: $bp-portrait) {
-    width: calc(100% + 60px);
-    margin: 30px -30px 50px;
+  >h1, >h2, >h3, >h4, >h5, >h6 {
+    @media (min-width: $bp-landscape) { 
+      padding: 0 20px;
+    }
   }
 
-  img {
-    border: 40px solid $color-white;
-    border-bottom: 20px solid $color-white;
-    width: 100%;
-    box-sizing: border-box;
+  &.half-width {
+
+    >div {
+      display: inline-block;
+      width: 100%;
+      box-sizing: border-box;
+      float: left;
+
+      @media (min-width: $bp-landscape) {
+        width: 50%;  
+        padding: 0 20px;
+      }
+
+      p:last-child {
+        margin-bottom: $paragraph-margin-bottom;
+      }
+    }
+  }
+
+  &.button-accom {
+
+    >div {
+      display: inline-block;
+      width: 100%;
+      box-sizing: border-box;
+      float: left;
+      margin-bottom: 30px;
+
+      @media (min-width: $bp-landscape) { 
+        padding: 0 20px;
+        width: 40%;
+      }
+
+      &:last-child {
+        text-align: center;
+
+        @media (min-width: $bp-landscape) { 
+          width: 20%;
+          padding: 0;
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  &.extended-image {
+    width: calc(100% + 40px);
+    margin: 20px -20px;
+    background-color: $color-white;
+    overflow: hidden;
+
+    @media (min-width: $bp-portrait) {
+      width: calc(100% + 60px);
+      margin: 20px -30px;
+    }
+
+    img {
+      border: 40px solid $color-white;
+      border-bottom: 20px solid $color-white;
+      width: 100%;
+      box-sizing: border-box;
+    }
   }
 }
 
 .centered {
   text-align: center;
+}
+
+.page-title {
+  border-bottom: 3px solid $m2;
+  margin-bottom: 30px;
+
+  h1 {
+    margin-bottom: 15px;
+    color: $m1;
+  }
+
+  h5 {
+    margin-bottom: 10px;
+  }
+}
+
+.action-area {
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  border-top: 4px solid $m2;
+  padding-top: 30px;
+
+  @media (min-width: $bp-portrait) {
+    padding-top: 40px;
+    margin-top: 20px;
+  }
+}
+
+a.project-point {
+  display: inline-block;
+  width: 50%;
+  position: relative; 
+  float: left; 
+  box-sizing: border-box;
+  color: $d1;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 0;
+
+  @media (min-width: $bp-portrait) {
+    font-size: 16px;
+  }
+
+  strong {
+    display: inline-block;
+    width: 100%;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    color: $m1;
+    line-height: 30px;
+  }
+
+  &.prev {
+    text-align: left;
+    padding-left: 35px;
+
+    i {
+      left: 0;
+      text-align: left;
+    }
+  }
+
+  &.next {
+    text-align: right;
+    padding-right: 35px;
+
+    i {
+      right: 0;
+      text-align: right;
+    }
+  }
+
+  i {
+    position: absolute;
+    top: 0;
+    width: 35px;
+    font-size: 30px;
+    color: $m2;
+  }
 }
 
 .caption {
@@ -107,6 +251,13 @@ a.button {
   &.icon {
     font-size: 22px;
     padding: 8px;
+  }
+
+  &.read-more {
+
+    i {
+      margin-left: 10px;
+    }
   }
 }
 
@@ -267,6 +418,11 @@ article {
   a {
     color: $color-white;
     font-weight: 700;
+
+    &.button {
+      background: $color-white;
+      color: $m2;
+    }
   }
 
   h4 {
