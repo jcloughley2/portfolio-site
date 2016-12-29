@@ -358,7 +358,6 @@ body.home {
 
         .cropped-image {
           background: white;
-          background-image: url('../assets/donation-thumbnail.jpg');
           background-size: cover;
           background-position: center center;
           background-repeat: no-repeat;
@@ -370,6 +369,9 @@ body.home {
           padding-top: 2 / 3 * 100%;
           vertical-align: top;
           transition: .3s all;
+          -webkit-box-shadow: inset 0px 0px 100px -5px rgba(0,0,0,0.08);
+          -moz-box-shadow: inset 0px 0px 100px -5px rgba(0,0,0,0.08);
+          box-shadow: inset 0px 0px 100px -5px rgba(0,0,0,0.08);
         }
 
         &:after {
@@ -468,6 +470,36 @@ body.home {
 
           &:after {
             background: $m3;   
+          } 
+        }
+      }
+
+      &#prestonwood {
+
+        .project-thumbnail {
+
+          .cropped-image {
+            background-image: url('../assets/prestonwood/thumbnail.jpg');   
+          } 
+        }
+      }
+
+      &#griffon-station {
+
+        .project-thumbnail {
+
+          .cropped-image {
+            background-image: url('../assets/griffon-station/thumbnail.jpg');   
+          } 
+        }
+      }
+
+      &#fivetwelve{
+
+        .project-thumbnail {
+
+          .cropped-image {
+            background-image: url('../assets/fivetwelve/thumbnail.jpg');   
           } 
         }
       }
