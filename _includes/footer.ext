@@ -3,7 +3,7 @@
     	<div class="contact-component">
     		 <h2>Joe Cloughley</h2>
     		<h4>Get In Touch</h4>
-    		<p>For inquiries or to see more of my work please contact me at <a target="_blank" href="mailto:joecloughley@gmail.com">joecloughley@gmail.com</a>.</p>
+    		<p>For inquiries or to see more of my work please contact me at <a target="_blank" href="mailto:joecloughley@gmail.com">joecloughley@gmail.com</a>.<br /><a class="resume-link" target="_blank" href="assets/cloughley_resume_2016.pdf"><i class="fa fa-download" aria-hidden="true"></i>  Resume</a></p>
         </div>
         <div class="info-component">
     	  	<h4>About This Site</h4>
@@ -11,9 +11,10 @@
         </div>
         <div class="social-component">
         	<h4>Find Me Elsewhere</h4>
-	        <a title="instagram" class="instagram" href="https://www.instagram.com/imaseacritter"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-	       	<a title="linkedin" class="linkedin" href="https://www.linkedin.com/in/joe-cloughley-9148253a
-"><i class="fa fa-linkedin" aria-hidden="true"></i></a>  
+            <a target="_blank" title="github" class="github" href="https://github.com/jcloughley2"><i class="fa fa-github" aria-hidden="true"></i></a>    
+	        <a target="_blank" title="instagram" class="instagram" href="https://www.instagram.com/imaseacritter"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+	       	<a target="_blank" title="linkedin" class="linkedin" href="https://www.linkedin.com/in/joe-cloughley-9148253a
+"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
         </div>
     </div>
 </section>
