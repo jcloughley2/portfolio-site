@@ -212,7 +212,6 @@ section {
 
     .inner {
       max-width: 1200px;
-      margin: 0 auto;
     }
   }
 }
@@ -222,6 +221,7 @@ section {
   padding: 50px 0;
   position: relative;
   box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .section-header {
