@@ -1,66 +1,84 @@
 // SCSS HTML 
 
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../assets/icomoon/fonts/icomoon.eot?5qr6y9');
+  src:  url('../assets/icomoon/fonts/icomoon.eot?5qr6y9#iefix') format('embedded-opentype'),
+    url('../assets/icomoon/fonts/icomoon.ttf?5qr6y9') format('truetype'),
+    url('../assets/icomoon/fonts/icomoon.woff?5qr6y9') format('woff'),
+    url('../assets/icomoon/fonts/icomoon.svg?5qr6y9#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  background: $s1;   
-  font-family: 'Open Sans', sans-serif;   
+  background: $color-white;   
+  font-family: $sans-serif;  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;   
   color: $d1; 
   overflow-x: hidden;  
   font-size: 16px;  
+  box-sizing: border-box;
 } 
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  text-transform: uppercase;  
-  font-family: 'Roboto Slab', serif;
-  margin-bottom: 25px;
+  font-family: $sans-serif;
+  margin-bottom: 32px;
+  color: $d1;
+  font-size: 36px;
+  display: block;
+  width: auto;
 }
 
 h2 {
   font-size: 28px;
-  line-height: 36px;
-  margin-bottom: 40px;
+  line-height: 48px;
   position: relative;
+  text-transform: uppercase;  
 }
 
 h3 {
-  margin-bottom: 20px;
-  text-transform: capitalize;
-  color: $m1;
-  line-height: 32px;
-  font-size: 22px;
+  color: $d1;
+  font-size: 28px;
+  line-height: 48px;
 }
 
 h4 {
   font-family: $sans-serif;
   text-transform: uppercase;
   letter-spacing: .5px;
-  margin-bottom: 10px;  
+  margin-bottom: 28px;  
   font-size: 16px;
   font-weight: 600;
   line-height: 22px;
-  color: $m2;
+  color: $d1;
 }
 
 h5 {
   font-family: $sans-serif;
   text-transform: uppercase;
-  color: $d1-light;
+  color: $d2;
   letter-spacing: .25px;
-  margin-bottom: 5px;  
+  margin-bottom: 28px;  
   font-size: 14px;
   font-weight: normal;
   line-height: 22px;
 }
 
 p {
-  margin-bottom: $paragraph-margin-bottom;  
+  margin-bottom: 32px;  
   margin-top: 0;
   line-height: 32px;  
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &.callout {
+        font-size: 32px;
+    line-height: 48px;
   }
 }
 
@@ -68,16 +86,32 @@ a {
   text-decoration: none;  
   font-weight: 600;
   color: $m1;  
-  transition: .3s all;
 
   &:hover {
-    opacity: .8;
+    color: $m2;
   } 
+
+  >h1, >h2, >h3, >h4, >h5, >h6 {
+    color: $m1;  
+
+    &:hover {
+      color: $m2;
+    } 
+  }
 }
 
 img {
   width: 100%;
   height: auto;
+}
+
+video {
+       display: none;
+       margin-bottom: 64px;
+
+        @media (min-width: $bp-desktop-l) {
+        display: block;
+      }
 }
 
 hr {

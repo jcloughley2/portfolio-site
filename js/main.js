@@ -2,23 +2,6 @@
 
 $(document).ready(function() {
 
-	// Masthead Rotator
-
-	var rotateDegree = 360;
-
-	$(".tagline-scroll").on('beforeChange', function(event, slick, currentSlide, nextSlide){
-		$('.tagline-wheel').css("transform", "rotate(" + rotateDegree + "deg)");
-		rotateDegree = rotateDegree + 360;
-	}).on('init', function(event, slick){
-    	$('.tagline').addClass('make-visible');
-	}).slick({
-		dots: false,
-		nextArrow: '.tagline-wheel',
-		infinite: true,
-		fade: true,
-		autoplay: true,
-	});
-
 	// Make Tiles Clickable
 
 	$(".project-list article").click(function() {

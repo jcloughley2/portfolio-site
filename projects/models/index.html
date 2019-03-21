@@ -1,0 +1,157 @@
+---
+layout: default
+---
+
+<section class="main-column">  
+    <div class="inner">
+        <div class="page-title">
+            <h5>Case Study</h5>
+            <h1>Label your Data, Synthetically</h1>
+            <div class="project-tags"><span>Product Design</span><span>UX Research</span></div>
+        </div>
+        
+        <p>The goal of this project was to help machine learning scientists create and train models. The models receive text and image data and predict categories on the data so that the user can reduce the amount of data that gets sent to the costly crowd for human to assign categories.</p>
+
+        <h3>The Problem</h3>
+        
+        <p>Figure Eight users come to the platform with raw image and text data and receive categories on this data (for example, ‘Is this image showing a cat, or dog?’). The existing path to do this is to send the data to the Figure Eight crowds of human annotators to categorize. The issue with this is that human annotators are expensive to employ at the scale our customers need. Our goal was to integrate a step into the process in which a user can use machine learning to predict the categories. With a portion of the data categorized synthetically, the user can reduce the amount of data that gets sent to the crowd and ultimatly reduce costs.</p>
+
+        <div class="layout-treatment extended-image">
+            <img src="/assets/models/platform-page-illustration.png" />
+        </div>
+
+        <h3>Roles/Team</h3>
+        
+        <p>My role was lead product designer. I worked closely with a project manager, a machine learning scientist, and our front-end UX team. I also worked with designers from other projects to handle the integration with this new feature.</p>
+
+        <p>In addition to UI/UX and visual design, code prototyping was integral to this finished project. I created a collection of code snippets showing important visualizations and interactions.</p>
+
+        <h3>Design Process</h3>
+
+        <h4>Research</h4>
+
+        <p>We kicked off this process by gathering sponsored users. This ultimately helped us to develop initial user stories, product requirements, and initial wireframe sketches. With this feature we set out to build a completely new offering on our platform. Working closely with our sponsored users at every step of the design process was essential for staying focused and on track to meeting the needs of future users.</p>
+
+        <p>The users for this new feature would be data scientists. Throughout the design process we referenced three personas that had previously been created, representing a typical customer machine learning team.</p>
+
+        <div class="layout-treatment extended-image">
+            <img src="/assets/video/video_personas.jpg" />
+            <span class="caption">Figure Eight Customer Personas</span>
+        </div>
+
+        <p>We talked to our customers about the work that goes into training good machine learning models, a process that is both timely and costly. We learned about what kind of models they employ or would hope to employ and the facets of their data. We discussed what form their raw data is in and what would be the optimal output once the data is turned into information on our platform.</p>
+
+        <p>Our primary sponsored user wanted a faster and more cost effective way to categorize fashion images in particular. They provided us with some of their unlabeled data and we used the data in our prototypes to outfit the experience according to their use case. This helped us ensure that we were building the right product for them and other teams with a similar use case.</p>
+
+        <h4>Ideation</h4>
+
+        <p>Many of the challenges around this design were focused on trust and safety and what I call the UX of machine learning; How do we cut corners with machine learning and retain trust? I referenced our companies design principles to guide the design and justify some of the design decisions.</p>
+
+        <div class="layout-treatment extended-image">
+            <img src="/assets/models/design-principles.jpg" />
+        </div>
+
+        <p>Because the process of getting training data and using it to train a model is complicated, a good amount of time was spent diagramming the experience and the user flow prior to more formal prototyping. We wanted to make a complicated process as simple and painless as possible.</p>
+
+        <div class="layout-treatment half-width">
+            <div>
+                <img src="/assets/models/active-learning-loop.jpg" />
+                <span class="caption">Understanding the Active Learning loop</span>
+            </div>
+            <div>
+                <img src="/assets/models/models-page-flows.jpg" />
+                <span class="caption">Initial page flow sketch</span>
+            </div>
+        </div>
+
+        <div class="layout-treatment extended-image">
+            <img src="/assets/models/page-flow-diagram.png" />
+            <span class="caption">User Experience Flow Diagram</span>
+        </div>
+
+        <h4>Iterative Prototyping and Design</h4>
+
+        <p>Concerning our primary flow, I worked in Sketch and Invision to create low fidelity wireframes. As we routinely met with sponsored users, these mockups were put in front of them to validate design decision. The mocks were then iterated on and the process repeated.</p>
+
+        <div class="layout-treatment half-width white-bg">
+            <div>
+                <img src="/assets/models/train-page-lo-fi.png" />
+                <span class="caption">Lo-Fi mocks of the Train page, created in Sketch.</span>
+            </div>
+            <div>
+                <img src="/assets/models/predict-page-lo-fi.png" />
+                <span class="caption">Lo-Fi mocks of the Predict/Evaluate page, created in Sketch.</span>
+            </div>
+        </div>
+
+        <p>Once we were ready to move the prototype into high fidelity, I continued to iterate primarily in Sketch and Invision, but also began to focus more on some key interactions and visuals. I employed code to do this. This allowed me to quickly experiment, focus on the details of an interaction, and use animations beyond what are possible in Sketch or other design prototyping applications.</p>
+
+        <p>This new offering was to represent a new effort in AI and ML for our company. We wanted a visual design that communicated that. We wanted our users to know that our platform is smart, trustworthy, and powerful. The visual design was a very important part of communicating this.</p>
+
+        <div class="layout-treatment extended-image">
+            <p data-height="550" data-theme-id="light" data-slug-hash="vzJJbx" data-default-tab="result" data-user="jcloughley" data-pen-title="Model Animations" class="codepen">See the Pen <a href="https://codepen.io/jcloughley/pen/vzJJbx/">Model Animations</a> by Joe C (<a href="https://codepen.io/jcloughley">@jcloughley</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            <span class="caption">I created this visualization with custom code to show the state of the model, from being empty all the wat to being fully trained.</span>
+        </div>
+
+        <div class="layout-treatment extended-image">
+            <p data-height="400" data-theme-id="0" data-slug-hash="EeZded" data-default-tab="css,result" data-user="jcloughley" data-pen-title="EeZded" class="codepen">See the Pen <a href="https://codepen.io/jcloughley/pen/EeZded/">EeZded</a> by Joe C (<a href="https://codepen.io/jcloughley">@jcloughley</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            <span class="caption">This code was created to communicate the darg-and-drop animation for the platform.</span>
+        </div>
+
+        <h4>Design Handoff, Launch and post-launch</h4>
+
+        <p>When the customer flows were validated enough for the phase 1 release of this feature, I worked closely with our front end team to communicate the design and desired interactions. My code snippets helped the engineering team to save time.</p>
+
+        <p>The feature was initially put into the hands of our sponsored users. We remained in touch with these users to continue editing post-release.</p>
+
+        <div class="layout-treatment extended-image">
+            <img src="/assets/models/train-page-hi-fi.jpg" />
+            <span class="caption">Hi-Fi mocks of the Train page</span>
+        </div>
+
+        <div class="layout-treatment extended-image">
+            <img src="/assets/models/evaluation-page-hi-fi.jpg" />
+            <span class="caption">Hi-Fi mocks of the Evaluate page</span>
+        </div>
+
+        <h3>Retrospective and Lessons Learned</h3>
+
+        <h4>Understanding power users</h4>
+
+        <p>This project brought about extra challenges in getting into the heads of our primary user, the machine learning scientist. In some use cases a designer can get pretty far armed with interaction best practices, a design system, and their own experiences using technology. For this project, I had to go more in depth on on how machine learning works, the terminology used, and what input and output information is crucial to the experience of creating a machine learning model.</p>
+
+        <p>The overhead knowledge required to work with machine learning models appears complicated and technical from my own point of view. This of course isn't the case for a strong machine learning scientist. i found it challenging to design an experience that meets the user at a level of knowledge I didn't have myself.</p>
+
+        <p>To alleviate this, I researched machine learning and worked closely throughout the project with the machine learning scientists in-house. I now know much more about the field of machine learning.</p> 
+
+        <h4>Building the skateboard.</h4> 
+
+        <p>This feature was both new and foundational to our platform. Integrating machine learning was something we had not done before. In many ways the feature could be considered a separate product for our company. We knew that this was truly the 'skateboard' we could see becoming the 'bicycle' and then the 'car' in the years ahead. It was a challenge to create new patterns for the experience and anticipate all the ways we would be building off of it in the future.</p>
+
+        <p>To meet this challenge, we took a very modular approach to the design and were very intentional about how buckets of information were placed. Much of the design is inspired by dashboard concepts that can be rearranged and added to. This initial MVP works with image and text data but we anticipated it working with audio and video in the future. Design decisions were made to accommodate a variety of data types.</p> 
+
+        <p>All in all, just going into the project understanding that this was an MVP allowed the product and design teams to scope smartly and hold the right kinds of conversations for iteratively improving the feature.</p> 
+
+        <h4>The importance of the onboarding experience.</h4>
+
+        <p>Because this feature was such a new offering for our users, and one that is naturally complicated, we emphasized onboarding for the experience like never before. A lot of design work was put into onboarding and this helped to polish my skills in designing onboarding experiences.</p> 
+
+        <div class="layout-treatment extended-image">
+            <img src="/assets/asheville/asheville-masthead.jpgx" />
+            <span class="caption">image: onboarding asset</span>
+        </div>
+
+        <div class="layout-treatment extended-image">
+            <img src="/assets/asheville/asheville-masthead.jpgx" />
+            <span class="caption">image: onboarding assets</span>
+        </div>  
+
+        <div class="action-area">
+            <div class="project-point prev"><a href="../wyndcroft"><h3><i class="fa fa-arrow-circle-o-left"></i>Previous</h3></a><p>Telling A Story: The Wyndcroft School</p></div>
+
+            <div class="project-point next"><a href="../video/redirect.html"><h3>Next<i class="fa fa-arrow-circle-o-right"></i></h3></a><p>Annotate Video up to 100x Faster</p></div>
+        </div>  
+    </div>
+</section>

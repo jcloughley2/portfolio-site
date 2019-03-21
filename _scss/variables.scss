@@ -4,21 +4,23 @@ $color-white: #FFF;
 $color-black: #000;
 
 $d1: #222222;
-$m1: #102542; //#102542;
-$m2: #F87060; //#F87060;
-$m3: #7D98A1;
-$m4: #FFA400;
-$s1: #f3f3f3;
+$d2: #CCCCCC;
+$m1: #0000FF;
+$m2: #F87060;
 
-$d1-light: lighten($d1, 20%);
+
+/*$d1-light: lighten($d1, 20%);
 $s1-light: lighten($s1, 15%);
-$s1-dark: darken($s1, 10%);
+$s1-dark: darken($s1, 10%);*/
 
 $bp-portrait: 600px;
 $bp-landscape: 768px;
 $bp-desktop: 1024px;
+$bp-desktop-l: 1200px;
+$bp-desktop-xl: 1400px;
+$bp-full: 1160px;
 
-$serif: 'Roboto Slab', serif;
-$sans-serif: 'Open Sans', sans-serif;   
+$serif: 'Roboto Mono', monospace;
+$sans-serif: 'Roboto Mono', monospace;
 
 $paragraph-margin-bottom: 30px;
